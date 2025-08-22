@@ -152,7 +152,7 @@ Expected results:
 The solution follows the [official LangGraph Platform pattern](https://docs.langchain.com/langgraph-platform/custom-lifespan) by:
 
 1. **Moving context manager to FastAPI lifespan** instead of separate function
-2. **Using `app.state`** to store resources (official recommendation)  
+2. **Using `app.state`** to store resources  
 3. **Keeping connection alive** for entire application lifetime
 4. **Proper cleanup** on application shutdown
 
